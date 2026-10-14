@@ -9,7 +9,8 @@ export const itens : Item[] = [
 
 export const menu_itens: any[] = [
     {"texto": "Home", "rota": "/"},
-    {"texto": "Jogos", "rota": "/jogos"},
-    {"texto": "Filmes", "rota": "/filmes"},
-    {"texto": "Animes", "rota": "/animes"},
+    {"texto": "Anunciar", "rota": "/anunciar"},
+    {"texto": "Mensagens", "rota": "/mensagens"},
+    {"texto": "Perfil", "rota": "/perfil"},
+    {"texto": "Trocas", "rota": "/trocas"}
 ]
