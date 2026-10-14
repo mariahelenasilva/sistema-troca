@@ -1,4 +1,5 @@
 import { Item } from "../interfaces/item-interface";
+import { Rota } from "../interfaces/rotas-interface";
 
 export const itens : Item[] = [
     {"id": 1, "nome": "Box de Livros", "categoria": "Livros", "status": "disponível", "estado": "semi-novo"},
@@ -7,10 +8,14 @@ export const itens : Item[] = [
     {"id": 4, "nome": "Caneta Esferográfica Azul (Pacote c/ 3)", "categoria": "Papelaria", "status": "disponível", "estado": "novo"}
 ]
 
-export const menu_itens: any[] = [
+export const rotas: Rota[] = [
     {"texto": "Home", "rota": "/"},
     {"texto": "Anunciar", "rota": "/anunciar"},
     {"texto": "Mensagens", "rota": "/mensagens"},
     {"texto": "Perfil", "rota": "/perfil"},
+<<<<<<< HEAD
     {"texto": "Trocas", "rota": "/trocas"}
+=======
+    {"texto": "Trocas", "rota": "/trocas"},
+>>>>>>> 4bf28039089727e1c8ff9c5ae65d8ac57738981c
 ]
