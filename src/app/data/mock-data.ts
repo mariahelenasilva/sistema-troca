@@ -13,9 +13,5 @@ export const rotas: Rota[] = [
     {"texto": "Anunciar", "rota": "/anunciar"},
     {"texto": "Mensagens", "rota": "/mensagens"},
     {"texto": "Perfil", "rota": "/perfil"},
-<<<<<<< HEAD
     {"texto": "Trocas", "rota": "/trocas"}
-=======
-    {"texto": "Trocas", "rota": "/trocas"},
->>>>>>> 4bf28039089727e1c8ff9c5ae65d8ac57738981c
 ]

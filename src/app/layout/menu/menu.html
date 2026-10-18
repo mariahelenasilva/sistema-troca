@@ -1,11 +1,8 @@
 <nav class="nav">
-    @for(item of itens; track $index ){
-<<<<<<< HEAD
-        <a class="nav-link" routerLink="{{item.rota}}">Link</a>
-=======
-        <a class="nav-link" routerLink="item.rota">{{item.texto}}</a>
->>>>>>> 4bf28039089727e1c8ff9c5ae65d8ac57738981c
+    @for(rota of listaRotas; track $index ){
+        <a class="nav-link" [routerLink]="rota.rota">{{rota.texto}}</a>
     }
 </nav>
+
 
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { rotas } from '../../data/mock-data';
 import { RouterLink } from '@angular/router';
+import { Rota } from '../../interfaces/rotas-interface';
 
 @Component({
   imports: [RouterLink],
@@ -9,5 +10,5 @@ import { RouterLink } from '@angular/router';
   templateUrl: './menu.html',
 })
 export class Menu {
-  itens:Rota[] = rotas;
+  listaRotas: Rota[] = rotas;
 }
