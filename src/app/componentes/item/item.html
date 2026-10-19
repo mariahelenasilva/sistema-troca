@@ -1,1 +1,14 @@
-<p>item works!</p>
+<article class="item-card">
+
+    <img class="item-card_image" [src]="item.imagem" [alt]="item.nome" loading="lazy">
+
+    <div class="item-card_body">
+
+        <h3 class="item-card_title">{{item.nome}}</h3>
+        <span class="item-card_category">{{item.categoria}}</span>
+        <p>Estado: {{item.estado}}</p>
+        <p>Status: {{item.status}}</p>
+
+    </div>
+
+</article>

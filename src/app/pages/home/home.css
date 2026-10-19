@@ -18,9 +18,37 @@
 
 .search-bar {
   display: flex;
+  align-items: center;
   gap: 10px;
   max-width: 520px;
+  margin-top: 26px;
+  padding: 4px 4px 4px 16px;
+  background: #f7f8fa;
+  border: 1px solid #e7e9ee;
   border-radius: 12px;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14.5px;
+  color: #1b1f2a;
+}
+
+.search-bar input::placeholder {
+  color: #9aa1ac;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar:focus-within {
+  border-color: #3b5bdb;
 }
 
 .search-button {
@@ -28,9 +56,70 @@
   border: none;
   border-radius: 999px;
   background: #ff7a33;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
   box-shadow: 0 4px 14px rgba(255, 122, 51, 0.35);
+  transition: background 0.15s ease;
 }
 
 .search-button:hover {
   background: #e9631a;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 32px 16px 24px;
+  }
+
+  .home h1 {
+    font-size: 30px;
+  }
+}
+
+/* para os itens */
+
+.destaques {
+  padding: 24px 32px 36px;
+  font-family: Arial, sans-serif;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1b1f2a;
+}
+
+.section-head a {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #3b5bdb;
+  text-decoration: none;
+}
+
+.section-head a:hover {
+  text-decoration: underline;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .destaques {
+    padding: 24px 16px;
+  }
 }

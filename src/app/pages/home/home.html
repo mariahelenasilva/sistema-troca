@@ -11,3 +11,17 @@
     <button type="button" class="search-button">Buscar</button>
   </div>
 </section>
+
+<section class="destaques">
+  <div class="section-head">
+    <h2>Destaques para você</h2>
+  </div>
+
+  <div class="item-grid">
+    @for (item of listaItens; track item.id) {
+      <app-item [item]="item" />
+    }
+  </div>
+</section>
+
+<img class="home_image" src="assets/images/img_home.png" alt="Ilustração de troca de itens">

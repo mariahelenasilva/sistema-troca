@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item as ItemDados} from '../../interfaces/item-interface'
 
 @Component({
   imports: [],
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './item.css',
   templateUrl: './item.html',
 })
-export class Item {}
+
+export class Item {
+  @Input({ required: true }) item!: ItemDados;
+}

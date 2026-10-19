@@ -4,4 +4,5 @@ export interface Item{
     categoria:string;
     status:string;
     estado:string;
+    imagem:string;
 }

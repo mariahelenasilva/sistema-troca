@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 
-.navbar__logo {
+.navbar_logo {
   font-weight: 800;
   font-size: 22px;
   display: flex;
@@ -23,15 +23,15 @@
   gap: 2px;
 }
 
-.navbar__logo .t {
+.navbar_logo .t {
   color: #3b5bdb;
 }
 
-.navbar__logo .j {
+.navbar_logo .j {
   color: #ff7a33;
 }
 
-.navbar__right {
+.navbar_right {
   display: flex;
   align-items: center;
   gap: 16px;
