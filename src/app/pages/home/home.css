@@ -1,0 +1,36 @@
+.home {
+  padding: 48px 32px 24px;
+  font-family: Arial, sans-serif;
+}
+
+.home h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #1b1f2a;
+}
+
+.accent {
+  color: #ff7a33;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  border-radius: 12px;
+}
+
+.search-button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #ff7a33;
+  box-shadow: 0 4px 14px rgba(255, 122, 51, 0.35);
+}
+
+.search-button:hover {
+  background: #e9631a;
+}
