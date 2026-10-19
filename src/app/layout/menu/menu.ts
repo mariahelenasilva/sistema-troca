@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { rotas } from '../../data/mock-data';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Rota } from '../../interfaces/rotas-interface';
 
 @Component({
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   selector: 'app-menu',
   styleUrl: './menu.css',
   templateUrl: './menu.html',

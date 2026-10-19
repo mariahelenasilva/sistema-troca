@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  gap: 32px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 20px 0;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+

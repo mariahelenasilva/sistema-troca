@@ -34,7 +34,7 @@
 .navbar__right {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
 
 .btn {

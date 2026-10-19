@@ -9,7 +9,7 @@ export const itens : Item[] = [
 ]
 
 export const rotas: Rota[] = [
-    {"texto": "Home", "rota": "/"},
+    // {"texto": "Home", "rota": "/"},
     {"texto": "Anunciar", "rota": "/anunciar"},
     {"texto": "Mensagens", "rota": "/mensagens"},
     {"texto": "Perfil", "rota": "/perfil"},

@@ -1,6 +1,7 @@
 <nav class="nav">
     @for(rota of listaRotas; track $index ){
-        <a class="nav-link" [routerLink]="rota.rota">{{rota.texto}}</a>
+        <a class="nav-link" [routerLink]="rota.rota" 
+        routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{rota.texto}}</a>
     }
 </nav>
 
