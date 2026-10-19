@@ -1,5 +1,6 @@
 <section class="home">
     <div class="home_content">
+
         <h1>
             Bem-vindo,<br>
             encontre o que<br>
@@ -12,6 +13,10 @@
                 aria-label="Buscar itens, categorias ou usuários">
             <button type="button" class="search-button">Buscar</button>
         </div>
+
+    </div>
+
+    <img class="home_image" src="assets/images/img_home.png" alt="Ilustração de troca de itens">
 </section>
 
 <section class="destaques">
@@ -21,9 +26,7 @@
 
     <div class="item-grid">
         @for (item of listaItens; track item.id) {
-        <app-item [item]="item" />
+            <app-item [item]="item" />
         }
     </div>
-    </div>
-    <img class="home_image" src="assets/images/img_home.png" alt="Ilustração de troca de itens">
 </section>
