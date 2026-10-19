@@ -1,3 +1,4 @@
+import { Categoria } from "../interfaces/categoria-interface";
 import { Item } from "../interfaces/item-interface";
 import { Rota } from "../interfaces/rotas-interface";
 
@@ -36,4 +37,13 @@ export const rotas: Rota[] = [
     {"texto": "Mensagens", "rota": "/mensagens"},
     {"texto": "Perfil", "rota": "/perfil"},
     {"texto": "Trocas", "rota": "/trocas"}
+]
+
+export const categorias: Categoria[] = [
+   {"id": 1, "nome": "Livros"},
+   {"id": 2, "nome": "Eletrônicos"},
+   {"id": 3, "nome": "Material Escolar"},
+   {"id": 4, "nome": "Roupas"},
+   {"id": 5, "nome": "Esportes"},
+   {"id": 6, "nome": "Outros"}
 ]

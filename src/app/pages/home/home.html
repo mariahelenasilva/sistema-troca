@@ -19,6 +19,21 @@
     <img class="home_image" src="assets/images/img_home.png" alt="Ilustração de troca de itens">
 </section>
 
+
+<section class="categorias">
+  <div class="section-head">
+    <h2>Categorias</h2>
+  </div>
+
+  <div class="categoria-lista">
+    @for (categoria of listaCategorias; track categoria.id) {
+      <a class="categoria">
+        {{categoria.nome}}
+      </a>
+    }
+  </div>
+</section>
+
 <section class="destaques">
     <div class="section-head">
         <h2>Destaques para você</h2>

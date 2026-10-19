@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { itens } from '../../data/mock-data';
+import { categorias, itens } from '../../data/mock-data';
 import { Item } from '../../componentes/item/item';
 import { RouterLink } from '@angular/router';
 
@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Home {
   listaItens = itens;
+  listaCategorias = categorias;
 }
 
 // import { Component } from '@angular/core';
