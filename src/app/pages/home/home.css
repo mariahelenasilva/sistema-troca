@@ -148,3 +148,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* para as categorias */
+
+.categorias {
+  padding: 24px 32px;
+  font-family: Arial, sans-serif;
+}
+
+.categoria-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.categoria {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  background: #ffffff;
+  border: 1px solid #e7e9ee;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1b1f2a;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.categoria:hover {
+  border-color: #9aa1ac;
+  background: #f7f8fa;
+}
+
+@media (max-width: 600px) {
+  .categorias {
+    padding: 24px 16px;
+  }
+}
