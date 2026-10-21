@@ -1,0 +1,47 @@
+<section class="home">
+    <div class="home_content">
+
+        <h1>
+            Bem-vindo,<br>
+            encontre o que<br>
+            precisa ou <span class="accent">troque</span><br>
+            o que não usa mais!
+        </h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar itens, categorias ou usuários..."
+                aria-label="Buscar itens, categorias ou usuários">
+            <button type="button" class="search-button">Buscar</button>
+        </div>
+
+    </div>
+
+    <img class="home_image" src="assets/images/img_home.png" alt="Ilustração de troca de itens">
+</section>
+
+
+<section class="categorias">
+  <div class="section-head">
+    <h2>Categorias</h2>
+  </div>
+
+  <div class="categoria-lista">
+    @for (categoria of listaCategorias; track categoria.id) {
+      <a class="categoria">
+        {{categoria.nome}}
+      </a>
+    }
+  </div>
+</section>
+
+<section class="destaques">
+    <div class="section-head">
+        <h2>Destaques para você</h2>
+    </div>
+
+    <div class="item-grid">
+        @for (item of listaItens; track item.id) {
+            <app-item [item]="item" />
+        }
+    </div>
+</section>

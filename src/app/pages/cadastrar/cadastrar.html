@@ -1,0 +1,87 @@
+<div class="form-cadastrar">
+    <form #meuFormulario="ngForm" (ngSubmit)="cadastrar()">
+        <fieldset>
+            
+            <legend>Nome</legend>
+            <div class="search-bar">
+                <input #campoNome="ngModel" type="text" [(ngModel)]="nome" name="nome" required minlength="3" maxlength="100">
+            </div>
+            @if(campoNome.invalid && campoNome.touched){
+                <div>Campo nome deve ser preenchido!</div>
+            }
+
+        </fieldset>
+        <fieldset>
+            <legend>Curso</legend>
+            <div class="search-bar">
+            <input #campoCurso="ngModel" type="text" [(ngModel)]="curso" name="curso" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoCurso.invalid && campoCurso.touched){
+                <div>Campo curso deve ser preenchido!</div>
+            }
+
+        </fieldset>
+        <fieldset>
+            <legend>Cidade</legend>
+            <div class="search-bar">
+            <input #campoCidade="ngModel" type="text" [(ngModel)]="cidade" name="cidade" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoCidade.invalid && campoCidade.touched){
+                <div>Campo cidade deve ser preenchido!</div>
+            }
+
+        </fieldset>
+        <fieldset>
+            <legend>Unidade SENAI</legend>
+            <div class="search-bar">
+            <input #campoUnidadeSenai="ngModel" type="text" [(ngModel)]="unidadeSenai" name="unidadeSenai" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoUnidadeSenai.invalid && campoUnidadeSenai.touched){
+                <div>Campo Unidade SENAI deve ser preenchido!</div>
+            }
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Usuario</legend>
+            <div class="search-bar">
+            <input #campoUsuario="ngModel" type="text" [(ngModel)]="usuario" name="usuario" 
+                required minlength="3" maxlength="20">
+            </div>
+            @if(campoUsuario.invalid && campoUsuario.touched){
+                <div>Campo usuario deve ser preenchido!</div>
+            }
+        </fieldset>
+
+        <fieldset>
+            <legend>E-mail</legend>
+            <div class="search-bar">
+            <input #campoEmail="ngModel" type="email" [(ngModel)]="email" name="email" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoEmail.invalid && campoEmail.touched){
+                <div>Campo curso deve ser preenchido!</div>
+            }
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Senha</legend>
+            <div class="search-bar">
+            <input #campoSenha="ngModel" type="text" [(ngModel)]="senha" name="senha" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoSenha.invalid && campoSenha.touched){
+                <div>Campo senha deve ser preenchido!</div>
+            }
+
+        </fieldset>
+        <br>
+
+        <button [disabled]="!meuFormulario.valid" class="search-button">Salvar</button>
+
+    </form>
+</div>

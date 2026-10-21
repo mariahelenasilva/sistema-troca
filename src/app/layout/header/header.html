@@ -1,0 +1,49 @@
+<header class="navbar">
+
+    <nav class="nav">
+        <a routerLink="/" class="navbar_logo">
+            <span class="t">Troca</span><span class="j">Já</span>
+        </a>
+    </nav>
+
+
+    <!-- para deixar o menu entre a logo e as demais informações -->
+    <ng-content />
+
+
+    <div class="navbar_right">
+        <a routerLink="/anunciar" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Anunciar item</a>
+    
+            <button class="icon-btn" type="button" title="Notificações" aria-label="Notificações">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </button>
+        
+            <a routerLink="/perfil" class="user">
+                <span class="avatar avatar-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                    </svg>
+                </span>
+        
+                Maria Helena
+        
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+    </div>
+
+</header>
