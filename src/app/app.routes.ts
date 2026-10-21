@@ -5,6 +5,8 @@ import { Mensagens } from './pages/mensagens/mensagens';
 import { Perfil } from './pages/perfil/perfil';
 import { Trocas } from './pages/trocas/trocas';
 import { NotFound } from './pages/not-found/not-found';
+import { Login } from './pages/login/login';
+import { Cadastrar } from './pages/cadastrar/cadastrar';
 
 
 
@@ -28,6 +30,15 @@ export const routes: Routes = [
     {
         path: 'trocas',
         component: Trocas
+    },
+    {
+        path: 'login',
+        component: Login
+    },
+    {
+        path: 'cadastrar',
+        component: Cadastrar
+
     },
     {
         path: '**',

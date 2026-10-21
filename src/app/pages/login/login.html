@@ -1,0 +1,30 @@
+<div class="form-login">
+    <form #meuFormulario="ngForm" (ngSubmit)="logar()">
+        <fieldset>
+            <legend>Usuario</legend>
+            <div class="search-bar">
+            <input #campoUsuario="ngModel" type="text" [(ngModel)]="usuario" name="usuario" 
+                required minlength="3" maxlength="20">
+            </div>
+            @if(campoUsuario.invalid && campoUsuario.touched){
+                <div>Campo usuario deve ser preenchido!</div>
+            }
+        </fieldset>
+
+        <fieldset>
+            <legend>Senha</legend>
+            <div class="search-bar">
+            <input #campoSenha="ngModel" type="text" [(ngModel)]="senha" name="senha" 
+                required minlength="3" maxlength="100">
+            </div>
+            @if(campoSenha.invalid && campoSenha.touched){
+                <div>Campo senha deve ser preenchido!</div>
+            }
+
+        </fieldset>
+        <br>
+
+        <button [disabled]="!meuFormulario.valid" class="search-button">Login</button>
+
+    </form>
+</div>
